@@ -1,0 +1,8 @@
+manifest_version = "1"
+id = "slack-slash-command-rust"
+description = "Slack slash command handler using Rust"
+tags = ["slack", "rust"]
+
+[parameters]
+project-description = { type = "string",  prompt = "Description", default = "" }
+http-path = { type = "string", prompt = "HTTP path", default = "/...", pattern = "^/\\S*$" }
